@@ -105,11 +105,13 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          className="bg-cover"
+          className="bg-cover h-screen w-screen aspect-square object-cover"
           src="https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/web/IN-en-20241008-TRIFECTA-perspective_b28b640f-cee0-426b-ac3a-7c000d3b41b7_small.jpg"
           alt="logo"
         />
       </div>
+      <div className="absolute bg-black bg-opacity-40 w-full h-full"></div>
+
       <form className="absolute items-center flex-col justify-center px-12 py-8 bg-black w-[30%] my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <h1 className="font-bold text-3xl py-4">
           {isSignIn ? "Sign In" : "Sign Up"}
