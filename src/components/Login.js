@@ -111,7 +111,7 @@ const Login = () => {
           alt="logo"
         />
       </div>
-      <div className="absolute bg-black bg-opacity-40 w-full h-full"></div>
+      <div className="absolute bg-black bg-opacity-40 w-full h-screen"></div>
 
       <form className="absolute items-center flex-col justify-center px-12 py-8 w-[95%] bg-black md:w-[30%] my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <h1 className="font-bold text-3xl py-4">
