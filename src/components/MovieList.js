@@ -50,7 +50,7 @@ const MovieList = ({ title, movies }) => {
 
   return (
     <div className="p-6 relative">
-      <h1 className="font-semibold text-white text-3xl py-4">{title}</h1>
+      <h1 className="font-semibold text-white text-2xl md:text-3xl py-4">{title}</h1>
       <div className="relative flex items-center">
         {/* Previous Button (show only when needed) */}
         {showPrev && (
@@ -69,7 +69,7 @@ const MovieList = ({ title, movies }) => {
           className="flex overflow-x-scroll hide-scrollbar space-x-4"
           style={{ scrollBehavior: "smooth" }}
         >
-          <div className="flex space-x-4" style={{ width: "max-content" }}>
+          <div className="flex space-x-4 mt-5" style={{ width: "max-content" }}>
             {movies?.map((movie) => (
               <MovieCard key={movie.id} posterPath={movie?.poster_path} />
             ))}
